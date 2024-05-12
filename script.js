@@ -104,6 +104,11 @@ btn.addEventListener("click", () => {
       green: 0,
       yellow: 0,
     };
+    redDiv.innerHTML = "";
+    yellowDiv.innerHTML = "";
+    greenDiv.innerHTML = "";
+    blueDiv.innerHTML = "";
+    announceBox.innerHTML = "";
     OpeningCeremony(score, Race100M);
     flag = false;
     btn.innerText = "Restart Event";
