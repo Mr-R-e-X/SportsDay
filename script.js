@@ -81,7 +81,6 @@ function AwardCeremony(score) {
   const highToLowSorting = Object.keys(score).sort(
     (a, b) => score[b] - score[a]
   );
-  //   console.log(highToLowSorting);
   console.log(
     `${highToLowSorting[0].toUpperCase()} => ${score[highToLowSorting[0]]}`
   );
@@ -96,6 +95,7 @@ function AwardCeremony(score) {
   );
   updateWinner(highToLowSorting[0].toUpperCase(), score[highToLowSorting[0]]);
 }
+
 btn.addEventListener("click", () => {
   if (flag) {
     OpeningCeremony(score, Race100M);
