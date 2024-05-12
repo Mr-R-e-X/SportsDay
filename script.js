@@ -101,6 +101,7 @@ btn.addEventListener("click", () => {
     OpeningCeremony(score, Race100M);
     flag = false;
     btn.innerText = "Restart Event";
+    announceBox.innerHTML = "";
   } else {
     score = {
       red: 0,
