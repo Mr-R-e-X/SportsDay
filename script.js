@@ -98,6 +98,12 @@ function AwardCeremony(score) {
 
 btn.addEventListener("click", () => {
   if (flag) {
+    score = {
+      red: 0,
+      blue: 0,
+      green: 0,
+      yellow: 0,
+    };
     OpeningCeremony(score, Race100M);
     flag = false;
     btn.innerText = "Restart Event";
